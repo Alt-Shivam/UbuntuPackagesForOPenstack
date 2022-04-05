@@ -1,0 +1,28 @@
+all:
+  children:
+    primary:
+      hosts:
+        oshelm1:
+          ansible_port: 22
+          ansible_host: 192.168.5.122
+          ansible_user: ubuntu
+          ansible_password: ubuntu
+          ansible_ssh_private_key_file: /home/ubuntu/.ssh/id_rsa
+          ansible_ssh_extra_args: -o StrictHostKeyChecking=no
+    nodes:
+      hosts:
+        oshelm2:
+          ansible_port: 22
+          ansible_host: 192.168.5.123
+          ansible_user: ubuntu
+          ansible_password: ubuntu
+          ansible_ssh_private_key_file: /home/ubuntu/.ssh/id_rsa
+          ansible_ssh_extra_args: -o StrictHostKeyChecking=no
+        oshelm3:
+          ansible_port: 22
+          ansible_host: 192.168.5.124
+          ansible_user: ubuntu
+          ansible_password: ubuntu
+          ansible_ssh_private_key_file: /home/ubuntu/.ssh/id_rsa
+          ansible_ssh_extra_args: -o StrictHostKeyChecking=no
+...

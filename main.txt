@@ -1,8 +1,15 @@
 sudo -H pip3 install --ignore-installed PyYAML
 
+In order to set /proc/sys/net/bridge/bridge-nf-call-iptables by editing /etc/sysctl.conf. There you can add [1]
 
+net.bridge.bridge-nf-call-iptables = 1
 
+Then execute
 
+sudo sysctl -p
+
+modprobe br_netfilter
+sysctl -p /etc/sysctl.conf
 
 
 apt-get update       

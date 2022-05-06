@@ -19,4 +19,3 @@ apt-get install libnss3-tools
 
 sudo systemctl disable systemd-resolved.service
 sudo systemctl stop systemd-resolved
-

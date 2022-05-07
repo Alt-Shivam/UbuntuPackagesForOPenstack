@@ -15,7 +15,6 @@ sysctl -p /etc/sysctl.conf
 apt-get update       
 apt-get install libnss3-tools
 
-
 127.0.0.1   localhost.localdomain localhost
 127.0.1.1   ubuntu
 
